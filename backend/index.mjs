@@ -9,7 +9,7 @@ const port = 3001;
 
 // Define the YouTube API URL
 const YOUTUBE_SEARCH_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 // Use CORS middleware to allow requests from all origins
 app.use(cors());

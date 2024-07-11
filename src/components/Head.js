@@ -4,8 +4,7 @@ import { toggleMenu } from "../utils/appSlice";
 import { cacheResults } from "../utils/searchSlice";
 import { FiAlignJustify } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
-
-const BACKEND_PROXY_URL = "http://localhost:3001/search?q=";
+import { YOUTUBE_SEARCH_API } from "../utils/constants";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -28,7 +27,7 @@ const Head = () => {
   }, [searchQuery]);
 
   const getSearchSuggestions = async () => {
-    const data = await fetch(BACKEND_PROXY_URL + searchQuery);
+    const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
     setSuggestions(json[1]);
     dispatch(

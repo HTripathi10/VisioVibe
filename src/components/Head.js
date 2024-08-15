@@ -6,7 +6,7 @@ import { FiAlignJustify } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 
-const BACKEND_PROXY_URL = "http://localhost:3001/search?q=";
+// const BACKEND_PROXY_URL = "http://localhost:3001/search?q=";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");

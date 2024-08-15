@@ -4,6 +4,7 @@ import { toggleMenu } from "../utils/appSlice";
 import { cacheResults } from "../utils/searchSlice";
 import { FiAlignJustify } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
+import { YOUTUBE_SEARCH_API } from "../utils/constants";
 
 const BACKEND_PROXY_URL = "http://localhost:3001/search?q=";
 

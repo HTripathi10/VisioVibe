@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import ButtonList from "./ButtonList";
 import VideoContainer from "./VideoContainer";
+import WatchPage from "./WatchPage";
 
 const MainContainer = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
